@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Review</title>
+    <link rel="stylesheet" href="{% static 'front_end.css' %}">
+
+
+</head>
+<body>
+    <div class="main-content">
+
+        <header>
+            <h1>Sneaker Review</h1>
+            <p>Welcome to our Sneaker Review Platform. Please share your thoughts on our sneaker and get a sentiment analysis of your review!</p>
+        </header>
+        <form action="{% url 'classify' %}" method="post">
+            {% csrf_token %}
+            <!-- Review -->
+            <label for="review">What is your review of our sneakers:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+        
+            <input type="submit" value="Submit Review">
+        </form>
+        {% if sentiment %}
+        <div>
+            <h2>Sentiment:</h2>
+            <p>{{ sentiment }}</p>
+        </div>
+        {% endif %}
+
+        </div>
+
+    </div>
+      
+    <footer>
+        <p>For more information or queries, contact <a href="mailto:gleander007@gmail.com">gleander007@gmail.com</a></p>
+    </footer>
+</body>
+</html>
