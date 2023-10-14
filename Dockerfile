@@ -1,4 +1,5 @@
 FROM python:3.11.5
+ENV DJANGO_SETTINGS_MODULE=sneakerApi.settings
 ENV PYTHONBUFFERED 1
 RUN mkdir /app
 WORKDIR /app
