@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:af-south-1:099838748815:task-definition/sneaker-task-definition:1",
+    "taskDefinitionArn": "arn:aws:ecs:af-south-1:099838748815:task-definition/sneaker-task-definition:2",
     "containerDefinitions": [
         {
             "name": "sneaker-app",
-            "image": "public.ecr.aws/t2p8h4m7/sneaker-repo",
+            "image": "099838748815.dkr.ecr.af-south-1.amazonaws.com/sneaker-app",
             "cpu": 0,
             "portMappings": [
                 {
@@ -36,7 +36,7 @@
     "taskRoleArn": "arn:aws:iam::099838748815:role/ECS-task-exec",
     "executionRoleArn": "arn:aws:iam::099838748815:role/ECS-task-exec",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -47,10 +47,16 @@
             "name": "ecs.capability.execution-role-awslogs"
         },
         {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
         },
         {
             "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
@@ -76,7 +82,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-10-14T11:13:36.836Z",
+    "registeredAt": "2023-10-14T22:09:10.776Z",
     "registeredBy": "arn:aws:iam::099838748815:root",
     "tags": []
 }
