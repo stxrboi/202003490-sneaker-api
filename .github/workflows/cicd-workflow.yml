@@ -41,7 +41,7 @@ jobs:
         with:
           task-definition: sneaker-task-definition.json
           container-name:  sneaker-app
-          image: ${{steps.buid-image.outputs.image}}
+          image: ${{steps.buid-image.outputs.Image}}
           
       - name: Deploy AWS ECS task def
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
