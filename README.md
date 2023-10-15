@@ -22,3 +22,11 @@ An additional column was created to convert ratings to Sentiments (Negative, Neu
 ## Backend w/ Django RestFramework API
 - #### Classification Endpoint:
 Users enter review and get back sentiment.
+- #### Dockerized:
+Application is dockerized enabling ease of use, scaling and deployment.
+- #### Frontend:
+A slick, User-Friendly interface for quick and easy sentiment analysis.
+- #### AWS Integration and Deployment:
+The Sneaker Review Tool is deployed and hosted on AWS through the ECR, EWS, FARGATE & LOAD BALANCER.
+- #### CI/CD:
+GitHub actions is implemented enabling docker image to be built and pushed to AWS on push demand.
