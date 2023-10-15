@@ -19,3 +19,6 @@ The dataset has the following features:
 An additional column was created to convert ratings to Sentiments (Negative, Neutral, Positive)
 
 # Features
+## Backend w/ Django RestFramework API
+- #### Classification Endpoint:
+Users enter review and get back sentiment.
