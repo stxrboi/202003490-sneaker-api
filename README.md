@@ -8,12 +8,12 @@ Our latest sneaker has hit the shelves and we would love to hear from you. The S
 
 # Dataset
 (Description of Dataset)
--Name: sneakers_Reviews_Dataset.csv
+*Name: sneakers_Reviews_Dataset.csv
 The dataset has the following features:
--review_id, product_id, user_id: instance of review, product being reviewed, user reviewing.
--rating: 1-5, with 1-2 being negative, 3 neutral and 4-5 positive.
--review_text: the reviews made on the sneaker.
--timestamp: time review was made.
+*review_id, product_id, user_id: instance of review, product being reviewed, user reviewing.
+*rating: 1-5, with 1-2 being negative, 3 neutral and 4-5 positive.
+*review_text: the reviews made on the sneaker.
+*timestamp: time review was made.
 
 An additional column was created to convert ratings to Sentiments (Negative, Neutral, Positive)
 
