@@ -37,3 +37,8 @@ To make use of this project and implement it locally you must:
 * clone this repo.
 * build docker image.
 * run docker image.
+
+##### Aditional Resources used:
+* https://www.youtube.com/watch?v=t-9lWdZcrQM&t=249s&ab_channel=IntegrationNinjas
+* lecture recordings
+* https://www.youtube.com/watch?v=o7s-eigrMAI&ab_channel=BeABetterDev
