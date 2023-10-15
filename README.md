@@ -30,3 +30,10 @@ A slick, User-Friendly interface for quick and easy sentiment analysis.
 The Sneaker Review Tool is deployed and hosted on AWS through the ECR, EWS, FARGATE & LOAD BALANCER.
 - #### CI/CD:
 GitHub actions is implemented enabling docker image to be built and pushed to AWS on push demand.
+
+# LOCAL USE
+To make use of this project and implement it locally you must:
+* have Docker Desktop installed.
+* clone this repo.
+* build docker image.
+* run docker image.
